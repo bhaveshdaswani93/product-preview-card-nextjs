@@ -6,6 +6,11 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --primary-color: hsl(158, 36%, 37%);
+  --secondary-color: hsl(30, 38%, 92%);
+  --dark-blue: hsl(212, 21%, 14%);
+  --dark-gray-blue: hsl(228, 12%, 48%);
+  --white: hsl(0, 0%, 100%);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -16,7 +21,15 @@
   }
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  /* font-size: 14px; */
+}
+
+.bodyNotApplied {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
